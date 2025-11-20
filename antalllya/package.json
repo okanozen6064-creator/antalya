@@ -1,0 +1,13 @@
+{
+  "name": "antalyahakkinda-landing",
+  "version": "1.0.0",
+  "description": "Premium landing page for antalyahakkında.com",
+  "scripts": {
+    "dev": "npx serve .",
+    "start": "npx serve ."
+  },
+  "keywords": ["antalya", "landing", "page"],
+  "author": "",
+  "license": "MIT"
+}
+
