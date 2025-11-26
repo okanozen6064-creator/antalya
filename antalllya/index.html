@@ -1,25 +1,43 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Antalya Hakkında - Şehir Rehberi ve Haber Portalı</title>
-    <meta name="description" content="Antalya'nın en kapsamlı şehir rehberi. Gezilecek yerler, ne yenir, hava durumu ve nöbetçi eczaneler. Antalya hakkında her şey burada.">
-    
+    <meta name="description"
+        content="Antalya'nın en kapsamlı şehir rehberi. Gezilecek yerler, ne yenir, hava durumu ve nöbetçi eczaneler. Antalya hakkında her şey burada.">
+
     <!-- AdSense Code -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8260306494314241" crossorigin="anonymous"></script>
-    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8260306494314241"
+        crossorigin="anonymous"></script>
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        h1, h2, h3, h4, h5, h6 { font-family: 'Inter', sans-serif; }
-        .serif { font-family: 'Merriweather', serif; }
-        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .serif {
+            font-family: 'Merriweather', serif;
+        }
+
         /* Sticky Sidebar Support */
         .sticky-sidebar {
             position: -webkit-sticky;
@@ -28,6 +46,7 @@
         }
     </style>
 </head>
+
 <body class="bg-gray-100 text-gray-800 font-sans">
 
     <!-- Top Bar -->
@@ -52,13 +71,17 @@
             <div class="flex justify-between items-center">
                 <!-- Logo -->
                 <a href="index.html" class="flex items-center group">
-                    <div class="bg-orange-500 text-white p-2 rounded mr-2 group-hover:bg-blue-900 transition duration-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                    <div
+                        class="bg-orange-500 text-white p-2 rounded mr-2 group-hover:bg-blue-900 transition duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                         </svg>
                     </div>
                     <div>
-                        <h1 class="text-2xl font-black text-blue-900 leading-none">ANTALYA<span class="text-orange-500">HAKKINDA</span></h1>
+                        <h1 class="text-2xl font-black text-blue-900 leading-none">ANTALYA<span
+                                class="text-orange-500">HAKKINDA</span></h1>
                         <span class="text-xs text-gray-500 tracking-widest uppercase">Şehrin Nabzı</span>
                     </div>
                 </a>
@@ -66,15 +89,18 @@
                 <!-- Desktop Nav -->
                 <nav class="hidden md:flex space-x-6 font-semibold text-gray-700">
                     <a href="#" class="hover:text-orange-500 transition">Gündem</a>
-                    <a href="#" class="hover:text-orange-500 transition">Gezi Rehberi</a>
+                    <a href="tum-icerikler.html" class="hover:text-orange-500 transition">Tüm Rehberler</a>
                     <a href="#" class="hover:text-orange-500 transition">Yeme & İçme</a>
                     <a href="#" class="hover:text-orange-500 transition">Yaşam</a>
                 </nav>
 
                 <!-- CTA Button -->
-                <a href="http://xn--antalyaustas-d5b.com/" class="hidden md:inline-flex items-center bg-orange-600 hover:bg-orange-700 text-white px-6 py-2.5 rounded font-bold shadow-lg transform hover:-translate-y-0.5 transition duration-200">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                <a href="http://xn--antalyaustas-d5b.com/"
+                    class="hidden md:inline-flex items-center bg-orange-600 hover:bg-orange-700 text-white px-6 py-2.5 rounded font-bold shadow-lg transform hover:-translate-y-0.5 transition duration-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
                     USTA BUL
                 </a>
@@ -84,8 +110,11 @@
 
     <!-- Billboard Ad -->
     <div class="container mx-auto px-4 py-6 flex justify-center">
-        <div class="w-full max-w-[970px] h-[250px] bg-gray-200 border-2 border-dashed border-gray-300 flex flex-col items-center justify-center text-gray-400 relative overflow-hidden group">
-            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-20 transform -translate-x-full group-hover:animate-shine"></div>
+        <div
+            class="w-full max-w-[970px] h-[250px] bg-gray-200 border-2 border-dashed border-gray-300 flex flex-col items-center justify-center text-gray-400 relative overflow-hidden group">
+            <div
+                class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-20 transform -translate-x-full group-hover:animate-shine">
+            </div>
             <span class="font-bold text-lg">REKLAM ALANI</span>
             <span class="text-sm">970 x 250 Billboard</span>
         </div>
@@ -94,52 +123,71 @@
     <!-- Main Content Grid -->
     <div class="container mx-auto px-4 py-4">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
-            
+
             <!-- Left Content Column (8 cols) -->
             <div class="lg:col-span-8 space-y-8">
-                
+
                 <!-- Featured Story (Hero) -->
                 <div class="relative rounded-xl overflow-hidden shadow-2xl group cursor-pointer h-[400px]">
-                    <img src="https://images.unsplash.com/photo-1542051841857-5f90071e7989?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Kaleiçi" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-90"></div>
+                    <img src="https://images.unsplash.com/photo-1542051841857-5f90071e7989?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                        alt="Kaleiçi"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-90">
+                    </div>
                     <div class="absolute bottom-0 left-0 p-8 text-white">
-                        <span class="bg-orange-500 text-xs font-bold px-2 py-1 rounded mb-3 inline-block uppercase tracking-wide">Editörün Seçimi</span>
-                        <h2 class="text-3xl md:text-4xl font-bold mb-2 leading-tight">Antalya Kaleiçi: Tarihin ve Modern Yaşamın Büyülü Buluşması</h2>
-                        <p class="text-gray-200 mb-4 line-clamp-2">Dar sokakları, cumbalı evleri ve antik limanıyla Kaleiçi, Antalya'nın atan kalbi olmaya devam ediyor. İşte detaylı gezi rehberimiz.</p>
-                        <a href="articles/kaleici-tarihin-kalbi.html" class="inline-block text-orange-400 font-bold hover:text-white transition">Haberi Oku →</a>
+                        <span
+                            class="bg-orange-500 text-xs font-bold px-2 py-1 rounded mb-3 inline-block uppercase tracking-wide">Editörün
+                            Seçimi</span>
+                        <h2 class="text-3xl md:text-4xl font-bold mb-2 leading-tight">Antalya Kaleiçi: Tarihin ve Modern
+                            Yaşamın Büyülü Buluşması</h2>
+                        <p class="text-gray-200 mb-4 line-clamp-2">Dar sokakları, cumbalı evleri ve antik limanıyla
+                            Kaleiçi, Antalya'nın atan kalbi olmaya devam ediyor. İşte detaylı gezi rehberimiz.</p>
+                        <a href="articles/kaleici-tarihin-kalbi.html"
+                            class="inline-block text-orange-400 font-bold hover:text-white transition">Haberi Oku →</a>
                     </div>
                 </div>
 
                 <!-- Sub-Featured Grid (2 cols) -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <!-- Article Card 1 -->
-                    <a href="articles/duden-selalesi.html" class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition group">
+                    <a href="articles/duden-selalesi.html"
+                        class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition group">
                         <div class="h-48 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Düden" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                            <img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                alt="Düden"
+                                class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                         </div>
                         <div class="p-5">
                             <span class="text-blue-600 text-xs font-bold uppercase">Doğa</span>
-                            <h3 class="text-xl font-bold text-gray-900 mt-2 mb-2 group-hover:text-blue-900">Düden Şelalesi: Şehrin İçindeki Cennet</h3>
-                            <p class="text-gray-600 text-sm line-clamp-3">Antalya'nın serinletici güzelliği Düden Şelalesi, hem yukarı hem de aşağı şelale olarak iki kısımdan oluşur.</p>
+                            <h3 class="text-xl font-bold text-gray-900 mt-2 mb-2 group-hover:text-blue-900">Düden
+                                Şelalesi: Şehrin İçindeki Cennet</h3>
+                            <p class="text-gray-600 text-sm line-clamp-3">Antalya'nın serinletici güzelliği Düden
+                                Şelalesi, hem yukarı hem de aşağı şelale olarak iki kısımdan oluşur.</p>
                         </div>
                     </a>
 
                     <!-- Article Card 2 -->
-                    <a href="articles/konyaalti-plaji.html" class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition group">
+                    <a href="articles/konyaalti-plaji.html"
+                        class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition group">
                         <div class="h-48 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1566438480900-0609be27a4be?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Konyaaltı" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                            <img src="https://images.unsplash.com/photo-1566438480900-0609be27a4be?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                alt="Konyaaltı"
+                                class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                         </div>
                         <div class="p-5">
                             <span class="text-blue-600 text-xs font-bold uppercase">Plajlar</span>
-                            <h3 class="text-xl font-bold text-gray-900 mt-2 mb-2 group-hover:text-blue-900">Konyaaltı Plajı: Mavi Bayraklı Güzellik</h3>
-                            <p class="text-gray-600 text-sm line-clamp-3">Dünyaca ünlü Konyaaltı Plajı, tertemiz denizi ve dağ manzarası ile deniz severlerin vazgeçilmezi.</p>
+                            <h3 class="text-xl font-bold text-gray-900 mt-2 mb-2 group-hover:text-blue-900">Konyaaltı
+                                Plajı: Mavi Bayraklı Güzellik</h3>
+                            <p class="text-gray-600 text-sm line-clamp-3">Dünyaca ünlü Konyaaltı Plajı, tertemiz denizi
+                                ve dağ manzarası ile deniz severlerin vazgeçilmezi.</p>
                         </div>
                     </a>
                 </div>
 
                 <!-- Native Ad Block -->
                 <div class="bg-gray-50 border border-gray-200 p-4 rounded-lg">
-                    <div class="w-full h-[150px] bg-gray-200 flex items-center justify-center text-gray-400 border border-dashed border-gray-300">
+                    <div
+                        class="w-full h-[150px] bg-gray-200 flex items-center justify-center text-gray-400 border border-dashed border-gray-300">
                         <span class="font-bold">NATIVE / IN-FEED REKLAM ALANI</span>
                     </div>
                 </div>
@@ -147,40 +195,53 @@
                 <!-- List Layout Articles -->
                 <div class="space-y-6">
                     <!-- List Item 1 -->
-                    <a href="articles/antalya-yemekleri.html" class="flex flex-col md:flex-row bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition border border-gray-100">
+                    <a href="articles/antalya-yemekleri.html"
+                        class="flex flex-col md:flex-row bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition border border-gray-100">
                         <div class="md:w-1/3 h-48 md:h-auto relative">
-                            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Yemek" class="absolute inset-0 w-full h-full object-cover">
+                            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                alt="Yemek" class="absolute inset-0 w-full h-full object-cover">
                         </div>
                         <div class="p-6 md:w-2/3 flex flex-col justify-center">
                             <span class="text-orange-500 text-xs font-bold uppercase mb-2">Gastronomi</span>
-                            <h3 class="text-2xl font-bold text-gray-900 mb-3">Antalya'da Ne Yenir? Yöresel Lezzetler Rehberi</h3>
-                            <p class="text-gray-600 mb-4 line-clamp-2">Şiş köfte, hibeş, kabak tatlısı ve yanık dondurma... Antalya mutfağı, Akdeniz lezzetlerini kendine has yorumuyla sunuyor.</p>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-3">Antalya'da Ne Yenir? Yöresel Lezzetler
+                                Rehberi</h3>
+                            <p class="text-gray-600 mb-4 line-clamp-2">Şiş köfte, hibeş, kabak tatlısı ve yanık
+                                dondurma... Antalya mutfağı, Akdeniz lezzetlerini kendine has yorumuyla sunuyor.</p>
                             <span class="text-blue-600 text-sm font-medium">Devamını Oku →</span>
                         </div>
                     </a>
 
                     <!-- List Item 2 -->
-                    <a href="articles/antalya-muzesi.html" class="flex flex-col md:flex-row bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition border border-gray-100">
+                    <a href="articles/antalya-muzesi.html"
+                        class="flex flex-col md:flex-row bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition border border-gray-100">
                         <div class="md:w-1/3 h-48 md:h-auto relative">
-                            <img src="https://images.unsplash.com/photo-1599576838663-8334b7f5f6f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Müze" class="absolute inset-0 w-full h-full object-cover">
+                            <img src="https://images.unsplash.com/photo-1599576838663-8334b7f5f6f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                alt="Müze" class="absolute inset-0 w-full h-full object-cover">
                         </div>
                         <div class="p-6 md:w-2/3 flex flex-col justify-center">
                             <span class="text-orange-500 text-xs font-bold uppercase mb-2">Kültür & Sanat</span>
-                            <h3 class="text-2xl font-bold text-gray-900 mb-3">Antalya Müzesi: Tarihe Işık Tutan Eserler</h3>
-                            <p class="text-gray-600 mb-4 line-clamp-2">Türkiye'nin en büyük müzelerinden biri olan Antalya Müzesi, bölgedeki antik kentlerden çıkarılan eşsiz heykellere ev sahipliği yapıyor.</p>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-3">Antalya Müzesi: Tarihe Işık Tutan Eserler
+                            </h3>
+                            <p class="text-gray-600 mb-4 line-clamp-2">Türkiye'nin en büyük müzelerinden biri olan
+                                Antalya Müzesi, bölgedeki antik kentlerden çıkarılan eşsiz heykellere ev sahipliği
+                                yapıyor.</p>
                             <span class="text-blue-600 text-sm font-medium">Devamını Oku →</span>
                         </div>
                     </a>
 
                     <!-- List Item 3 -->
-                    <a href="articles/aspendos.html" class="flex flex-col md:flex-row bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition border border-gray-100">
+                    <a href="articles/aspendos.html"
+                        class="flex flex-col md:flex-row bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition border border-gray-100">
                         <div class="md:w-1/3 h-48 md:h-auto relative">
-                            <img src="https://images.unsplash.com/photo-1528659588554-325f161b9627?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Aspendos" class="absolute inset-0 w-full h-full object-cover">
+                            <img src="https://images.unsplash.com/photo-1528659588554-325f161b9627?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                alt="Aspendos" class="absolute inset-0 w-full h-full object-cover">
                         </div>
                         <div class="p-6 md:w-2/3 flex flex-col justify-center">
                             <span class="text-orange-500 text-xs font-bold uppercase mb-2">Tarih</span>
-                            <h3 class="text-2xl font-bold text-gray-900 mb-3">Aspendos Antik Tiyatrosu ve Eşsiz Akustiği</h3>
-                            <p class="text-gray-600 mb-4 line-clamp-2">Roma döneminin en iyi korunmuş tiyatrosu olan Aspendos, günümüzde hala konserlere ve etkinliklere ev sahipliği yapmaktadır.</p>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-3">Aspendos Antik Tiyatrosu ve Eşsiz Akustiği
+                            </h3>
+                            <p class="text-gray-600 mb-4 line-clamp-2">Roma döneminin en iyi korunmuş tiyatrosu olan
+                                Aspendos, günümüzde hala konserlere ve etkinliklere ev sahipliği yapmaktadır.</p>
                             <span class="text-blue-600 text-sm font-medium">Devamını Oku →</span>
                         </div>
                     </a>
@@ -191,55 +252,113 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                     <!-- Mini Card 1 -->
                     <a href="articles/termessos.html" class="bg-white p-4 rounded shadow hover:shadow-lg transition">
-                        <img src="https://images.unsplash.com/photo-1623164344502-31593305f38e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="w-full h-32 object-cover rounded mb-3">
+                        <img src="https://images.unsplash.com/photo-1623164344502-31593305f38e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            class="w-full h-32 object-cover rounded mb-3">
                         <h4 class="font-bold text-sm">Termessos: Dağların Zirvesi</h4>
                     </a>
                     <!-- Mini Card 2 -->
-                    <a href="articles/antalya-piyazi.html" class="bg-white p-4 rounded shadow hover:shadow-lg transition">
-                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="w-full h-32 object-cover rounded mb-3">
+                    <a href="articles/antalya-piyazi.html"
+                        class="bg-white p-4 rounded shadow hover:shadow-lg transition">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            class="w-full h-32 object-cover rounded mb-3">
                         <h4 class="font-bold text-sm">Meşhur Antalya Piyazı</h4>
                     </a>
                     <!-- Mini Card 3 -->
-                    <a href="articles/olympos-cirali.html" class="bg-white p-4 rounded shadow hover:shadow-lg transition">
-                        <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="w-full h-32 object-cover rounded mb-3">
+                    <a href="articles/olympos-cirali.html"
+                        class="bg-white p-4 rounded shadow hover:shadow-lg transition">
+                        <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            class="w-full h-32 object-cover rounded mb-3">
                         <h4 class="font-bold text-sm">Olympos ve Çıralı</h4>
                     </a>
                     <!-- Mini Card 4 -->
-                    <a href="articles/antalya-ulasim.html" class="bg-white p-4 rounded shadow hover:shadow-lg transition">
-                        <img src="https://images.unsplash.com/photo-1562620409-77e8c1c4e361?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="w-full h-32 object-cover rounded mb-3">
+                    <a href="articles/antalya-ulasim.html"
+                        class="bg-white p-4 rounded shadow hover:shadow-lg transition">
+                        <img src="https://images.unsplash.com/photo-1562620409-77e8c1c4e361?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            class="w-full h-32 object-cover rounded mb-3">
                         <h4 class="font-bold text-sm">Şehir İçi Ulaşım Rehberi</h4>
                     </a>
                     <!-- Mini Card 5 -->
-                    <a href="articles/antalya-alisveris.html" class="bg-white p-4 rounded shadow hover:shadow-lg transition">
-                        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="w-full h-32 object-cover rounded mb-3">
+                    <a href="articles/antalya-alisveris.html"
+                        class="bg-white p-4 rounded shadow hover:shadow-lg transition">
+                        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            class="w-full h-32 object-cover rounded mb-3">
                         <h4 class="font-bold text-sm">Alışveriş Rehberi</h4>
                     </a>
                     <!-- Mini Card 6 -->
                     <a href="articles/perge.html" class="bg-white p-4 rounded shadow hover:shadow-lg transition">
-                        <img src="https://images.unsplash.com/photo-1540202404-a671b57d5c9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="w-full h-32 object-cover rounded mb-3">
+                        <img src="https://images.unsplash.com/photo-1540202404-a671b57d5c9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            class="w-full h-32 object-cover rounded mb-3">
                         <h4 class="font-bold text-sm">Perge Antik Kenti</h4>
                     </a>
+                </div>
+
+                <!-- Transportation Guide Section -->
+                <div class="mt-8">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-2xl font-bold border-l-4 border-blue-900 pl-4">Şehirler Arası Mesafe Rehberi
+                        </h3>
+                        <a href="tum-icerikler.html" class="text-blue-600 font-bold hover:underline text-sm">Tümünü Gör
+                            →</a>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm">
+                            <a href="articles/antalya-istanbul-kac-km.html"
+                                class="flex items-center space-x-2 hover:text-orange-500">
+                                <span class="w-2 h-2 bg-orange-500 rounded-full"></span>
+                                <span>Antalya - İstanbul</span>
+                            </a>
+                            <a href="articles/antalya-ankara-kac-km.html"
+                                class="flex items-center space-x-2 hover:text-orange-500">
+                                <span class="w-2 h-2 bg-orange-500 rounded-full"></span>
+                                <span>Antalya - Ankara</span>
+                            </a>
+                            <a href="articles/antalya-izmir-kac-km.html"
+                                class="flex items-center space-x-2 hover:text-orange-500">
+                                <span class="w-2 h-2 bg-orange-500 rounded-full"></span>
+                                <span>Antalya - İzmir</span>
+                            </a>
+                            <a href="articles/antalya-bursa-kac-km.html"
+                                class="flex items-center space-x-2 hover:text-orange-500">
+                                <span class="w-2 h-2 bg-orange-500 rounded-full"></span>
+                                <span>Antalya - Bursa</span>
+                            </a>
+                            <a href="articles/antalya-adana-kac-km.html"
+                                class="flex items-center space-x-2 hover:text-orange-500">
+                                <span class="w-2 h-2 bg-orange-500 rounded-full"></span>
+                                <span>Antalya - Adana</span>
+                            </a>
+                            <a href="articles/antalya-konya-kac-km.html"
+                                class="flex items-center space-x-2 hover:text-orange-500">
+                                <span class="w-2 h-2 bg-orange-500 rounded-full"></span>
+                                <span>Antalya - Konya</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
             </div>
 
             <!-- Right Sidebar (4 cols) -->
             <div class="lg:col-span-4 space-y-8">
-                
+
                 <!-- CTA Widget -->
-                <div class="bg-gradient-to-br from-blue-900 to-blue-800 text-white p-6 rounded-xl shadow-xl text-center border-4 border-orange-500 transform hover:scale-105 transition duration-300">
+                <div
+                    class="bg-gradient-to-br from-blue-900 to-blue-800 text-white p-6 rounded-xl shadow-xl text-center border-4 border-orange-500 transform hover:scale-105 transition duration-300">
                     <h3 class="text-2xl font-black mb-2 uppercase">Antalya Ustası</h3>
-                    <p class="text-blue-100 mb-6 text-sm">Eviniz veya iş yeriniz için en güvenilir ustaları hemen bulun.</p>
-                    <a href="http://xn--antalyaustas-d5b.com/" class="block w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-4 rounded-lg shadow-lg transition text-lg animate-pulse">
+                    <p class="text-blue-100 mb-6 text-sm">Eviniz veya iş yeriniz için en güvenilir ustaları hemen bulun.
+                    </p>
+                    <a href="http://xn--antalyaustas-d5b.com/"
+                        class="block w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-4 rounded-lg shadow-lg transition text-lg animate-pulse">
                         USTA BULMAK İÇİN TIKLA
                     </a>
                 </div>
 
                 <!-- Sticky Sidebar Wrapper -->
                 <div class="sticky-sidebar space-y-8">
-                    
+
                     <!-- Sidebar Ad (Sticky) -->
-                    <div class="w-full h-[600px] bg-gray-200 border-2 border-dashed border-gray-300 flex flex-col items-center justify-center text-gray-400 relative">
+                    <div
+                        class="w-full h-[600px] bg-gray-200 border-2 border-dashed border-gray-300 flex flex-col items-center justify-center text-gray-400 relative">
                         <span class="font-bold text-lg">REKLAM ALANI</span>
                         <span class="text-sm">300 x 600 Skyscraper</span>
                     </div>
@@ -283,14 +402,18 @@
                                 <span class="text-green-600">3.1 km</span>
                             </li>
                         </ul>
-                        <a href="#" class="block text-center text-blue-600 text-xs font-bold mt-3 hover:underline">Tümünü Gör →</a>
+                        <a href="#"
+                            class="block text-center text-blue-600 text-xs font-bold mt-3 hover:underline">Tümünü Gör
+                            →</a>
                     </div>
 
                     <!-- Secondary CTA -->
                     <div class="bg-gray-100 p-4 rounded-lg border border-gray-300 text-center">
                         <h4 class="font-bold text-gray-800 mb-2">Hizmet mi Veriyorsunuz?</h4>
-                        <p class="text-xs text-gray-600 mb-3">Antalya Ustası ailesine katılın, binlerce müşteriye ulaşın.</p>
-                        <a href="http://xn--antalyaustas-d5b.com/" class="inline-block bg-white border border-gray-400 text-gray-700 px-4 py-2 rounded text-sm font-bold hover:bg-gray-50 transition">
+                        <p class="text-xs text-gray-600 mb-3">Antalya Ustası ailesine katılın, binlerce müşteriye
+                            ulaşın.</p>
+                        <a href="http://xn--antalyaustas-d5b.com/"
+                            class="inline-block bg-white border border-gray-400 text-gray-700 px-4 py-2 rounded text-sm font-bold hover:bg-gray-50 transition">
                             Kayıt Ol
                         </a>
                     </div>
@@ -302,7 +425,8 @@
 
     <!-- Footer Top Ad -->
     <div class="container mx-auto px-4 py-8 flex justify-center">
-        <div class="w-full max-w-[970px] h-[250px] bg-gray-200 border-2 border-dashed border-gray-300 flex flex-col items-center justify-center text-gray-400">
+        <div
+            class="w-full max-w-[970px] h-[250px] bg-gray-200 border-2 border-dashed border-gray-300 flex flex-col items-center justify-center text-gray-400">
             <span class="font-bold text-lg">REKLAM ALANI</span>
             <span class="text-sm">970 x 250 Footer</span>
         </div>
@@ -314,15 +438,16 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
                     <h3 class="text-white text-xl font-bold mb-4">Antalya Hakkında</h3>
-                    <p class="text-sm text-gray-400">Antalya'nın en güncel haberleri, gezi rehberleri ve yaşam ipuçları. Şehri bizimle keşfedin.</p>
+                    <p class="text-sm text-gray-400">Antalya'nın en güncel haberleri, gezi rehberleri ve yaşam ipuçları.
+                        Şehri bizimle keşfedin.</p>
                 </div>
                 <div>
                     <h4 class="text-white font-bold mb-4">Hızlı Erişim</h4>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="hover:text-orange-500">Anasayfa</a></li>
-                        <li><a href="#" class="hover:text-orange-500">Gezilecek Yerler</a></li>
-                        <li><a href="#" class="hover:text-orange-500">Ne Yenir?</a></li>
-                        <li><a href="#" class="hover:text-orange-500">Ulaşım</a></li>
+                        <li><a href="index.html" class="hover:text-orange-500">Anasayfa</a></li>
+                        <li><a href="tum-icerikler.html" class="hover:text-orange-500">Tüm Rehberler</a></li>
+                        <li><a href="articles/antalya-yemekleri.html" class="hover:text-orange-500">Ne Yenir?</a></li>
+                        <li><a href="articles/antalya-ulasim.html" class="hover:text-orange-500">Ulaşım</a></li>
                     </ul>
                 </div>
                 <div>
@@ -344,10 +469,12 @@
                 </div>
             </div>
             <div class="border-t border-gray-800 mt-8 pt-8 text-center text-xs text-gray-500">
-                &copy; 2025 Antalya Hakkında. Tüm hakları saklıdır. Bir <a href="http://xn--antalyaustas-d5b.com/" class="text-orange-500 hover:underline">Antalya Ustası</a> girişimidir.
+                &copy; 2025 Antalya Hakkında. Tüm hakları saklıdır. Bir <a href="http://xn--antalyaustas-d5b.com/"
+                    class="text-orange-500 hover:underline">Antalya Ustası</a> girişimidir.
             </div>
         </div>
     </footer>
 
 </body>
+
 </html>
