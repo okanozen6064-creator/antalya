@@ -94,7 +94,8 @@ template = """<!DOCTYPE html>
 </html>
 """
 
-# Data Sources
+# --- DATA SOURCES ---
+
 cities = [
     "Adana", "Adıyaman", "Afyonkarahisar", "Ağrı", "Amasya", "Ankara", "Artvin", "Aydın", "Balıkesir", "Bilecik", 
     "Bingöl", "Bitlis", "Bolu", "Burdur", "Bursa", "Çanakkale", "Çankırı", "Çorum", "Denizli", "Diyarbakır", 
@@ -111,56 +112,117 @@ districts = [
     "Kaş", "Kemer", "Kepez", "Konyaaltı", "Korkuteli", "Kumluca", "Manavgat", "Muratpaşa", "Serik"
 ]
 
+neighborhoods = [
+    "Lara", "Dedeman", "Işıklar", "Güllük", "Dokuma", "Meltem", "Uncalı", "Altınkum", "Arapsuyu", "Gürsu", 
+    "Hurma", "Sarısu", "Varsak", "Masadağı", "Kırcami", "Şirinyalı", "Fener", "Çağlayan", "Güzeloba", "Ermenek",
+    "Kundu", "Belek", "Kadriye", "Boğazkent", "Çolaklı", "Kumköy", "Side", "Manavgat Merkez", "Alanya Merkez",
+    "Mahmutlar", "Kestel", "Oba", "Tosmur", "Konaklı", "Avsallar", "Okurcalar", "Türkler", "Payallar",
+    "Göynük", "Beldibi", "Kiriş", "Çamyuva", "Tekirova", "Adrasan", "Olympos", "Çıralı", "Mavikent", "Beykonak",
+    "Duraliler", "Çakırlar", "Bahtılı", "Doyran", "Geyikbayırı", "Hisarçandır", "Liman", "Öğretmenevleri",
+    "Toros", "Pınarbaşı", "Soğuksu", "Bayındır", "Meydankavağı", "Yeşilbahçe", "Zerdalilik", "Sinan", "Haşim İşcan",
+    "Kızılarık", "Konuksever", "Etiler", "Yüksekalan", "Dutlubahçe", "Sedir", "Varlık", "Yıldız"
+]
+
+hospitals = [
+    "Akdeniz Üniversitesi Hastanesi", "Antalya Eğitim ve Araştırma Hastanesi", "Atatürk Devlet Hastanesi", 
+    "Kepez Devlet Hastanesi", "Medical Park Antalya", "Memorial Antalya", "Yaşam Hastanesi", "OFM Hastanesi", 
+    "Anadolu Hastanesi", "Medstar Hastanesi", "Dünya Göz Hastanesi", "Olimpos Hastanesi", "Vitale Hastanesi",
+    "Uncalı Meydan Hastanesi", "Sirkeli Tıp Merkezi", "Korkuteli Devlet Hastanesi", "Alanya Eğitim Araştırma Hastanesi",
+    "Manavgat Devlet Hastanesi", "Serik Devlet Hastanesi", "Kumluca Devlet Hastanesi", "Finike Devlet Hastanesi",
+    "Özel Antalya Likya Hastanesi", "Özel Termessos Hastanesi", "Özel Şelale Tıp Merkezi", "Özel Lara Anadolu Hastanesi"
+]
+
+schools = [
+    "Akdeniz Üniversitesi", "Antalya Bilim Üniversitesi", "Alanya Alaaddin Keykubat Üniversitesi", "Alanya Hamdullah Emin Paşa Üniversitesi",
+    "Antalya AKEV Üniversitesi", "Adem Tolunay Anadolu Lisesi", "Antalya Anadolu Lisesi", "Metin Nuran Çakallıklı Anadolu Lisesi",
+    "Levent Aydın Anadolu Lisesi", "Yusuf Ziya Öner Fen Lisesi", "Dr. İlhami Tankut Anadolu Lisesi", "Gazi Anadolu Lisesi",
+    "Hacı Malike Mehmet Bileydi Anadolu Lisesi", "Konyaaltı Anadolu Lisesi", "Aldemir Atilla Konuk Anadolu Lisesi",
+    "TED Antalya Koleji", "Antalya Koleji", "İstek Antalya Okulları", "Bahçeşehir Koleji Antalya", "Doğa Koleji Antalya"
+]
+
+transportation = [
+    "Antalya Otogarı", "Antalya Havalimanı", "Antray Tramvay Hattı", "Nostaljik Tramvay", "Antalya Kart Başvuru Merkezi",
+    "Doğu Garajı", "Meydan Depolama", "Sarısu Depolama", "Varsak Depolama", "Fatih Tramvay Durağı", "Expo Tramvay Durağı",
+    "Havalimanı Tramvay Durağı", "Otogar Tramvay Durağı", "Çallı Tramvay Durağı", "Muratpaşa Tramvay Durağı", "İsmetpaşa Tramvay Durağı",
+    "Sigorta Tramvay Durağı", "Şarampol Tramvay Durağı", "Burhanettin Onat Tramvay Durağı", "Kaleiçi Tramvay Durağı"
+]
+
+foods = [
+    "Antalya Piyazı", "Şiş Köfte", "Hibeş", "Kabak Tatlısı", "Yanık Dondurma", "Serpme Börek", "Tahinli Piyaz", 
+    "Turunç Reçeli", "Bergamot Reçeli", "Patlıcan Reçeli", "Gözleme", "Bazlama", "Tandır Kebabı", "Alanya Bohçası",
+    "Gülüklü Çorba", "Laba Dolması", "Öküz Helvası", "Cive Yemeği", "Enginarlı Girit Kebabı", "Arap Kadayıfı",
+    "Finike Portakalı", "Korkuteli Yanık Dondurması"
+]
+
+services = [
+    "Antalya Nöbetçi Eczaneler", "Antalya Su Kesintisi", "Antalya Elektrik Kesintisi", "Antalya Hava Durumu", 
+    "Antalya Namaz Vakitleri", "Antalya Çilingir Hizmetleri", "Antalya Halı Yıkama", "Antalya Evden Eve Nakliyat",
+    "Antalya Araç Kiralama", "Antalya Temizlik Şirketleri", "Antalya Veteriner Klinikleri", "Antalya Diş Klinikleri",
+    "Antalya Spor Salonları", "Antalya Yüzme Havuzları", "Antalya Kütüphaneler", "Antalya Noterleri",
+    "Antalya Tesisatçı", "Antalya Elektrikçi", "Antalya Boyacı", "Antalya Klima Servisi"
+]
+
 beaches = [
     "Kaputaş Plajı", "Patara Plajı", "Konyaaltı Plajı", "Lara Plajı", "Phaselis Koyu", "Olympos Plajı", 
     "Adrasan Koyu", "Kleopatra Plajı", "Damlataş Plajı", "İncekum Plajı", "Mermerli Plajı", "Çıralı Plajı",
-    "Kekova Batık Şehir", "Suluada", "Korsan Koyu", "Papaz Koyu"
+    "Kekova Batık Şehir", "Suluada", "Korsan Koyu", "Papaz Koyu", "Beldibi Plajı", "Göynük Plajı", "Kemer Plajı",
+    "Tekirova Plajı", "Çamyuva Plajı", "Kızılot Plajı", "Sorgun Plajı", "Titreyengöl Plajı"
+]
+
+malls = [
+    "TerraCity AVM", "MarkAntalya AVM", "Mall of Antalya", "Deepo Outlet Center", "Migros 5M AVM", 
+    "ÖzdilekPark Antalya", "Erasta AVM", "Agora Antalya", "Shemall AVM", "Laura AVM", "Alanyum AVM",
+    "Novamall Manavgat", "Time Center Kemer", "Land of Legends Shopping Avenue"
 ]
 
 historical_sites = [
     "Termessos Antik Kenti", "Perge Antik Kenti", "Aspendos Antik Tiyatrosu", "Myra Antik Kenti", 
     "Xanthos Antik Kenti", "Arykanda Antik Kenti", "Side Antik Kenti", "Apollon Tapınağı", 
-    "Hadrian Kapısı (Üç Kapılar)", "Hıdırlık Kulesi", "Yivli Minare", "Karain Mağarası", "Alanya Kalesi", "Kızılkule"
-]
-
-malls = [
-    "TerraCity AVM", "MarkAntalya AVM", "Mall of Antalya", "Deepo Outlet Center", "Migros 5M AVM", 
-    "ÖzdilekPark Antalya", "Erasta AVM", "Agora Antalya", "Shemall AVM", "Laura AVM"
+    "Hadrian Kapısı (Üç Kapılar)", "Hıdırlık Kulesi", "Yivli Minare", "Karain Mağarası", "Alanya Kalesi", "Kızılkule",
+    "Simena Antik Kenti", "Patara Antik Kenti", "Olympos Antik Kenti", "Phaselis Antik Kenti", "Sillyon Antik Kenti",
+    "Lyrbe Antik Kenti", "Selge Antik Kenti"
 ]
 
 activities = [
     "Köprülü Kanyon Rafting", "Kaş Dalış Turu", "Alanya Yamaç Paraşütü", "Olympos Teleferik", 
     "Tünektepe Teleferik", "Antalya Jeep Safari", "Kemer Tekne Turu", "Manavgat Şelalesi Tekne Turu", 
-    "Antalya Akvaryum", "Land of Legends Theme Park", "Sandland Kum Heykel Müzesi"
+    "Antalya Akvaryum", "Land of Legends Theme Park", "Sandland Kum Heykel Müzesi", "Antalya Müzesi Ziyareti",
+    "Düden Şelalesi Gezisi", "Kurşunlu Şelalesi Gezisi", "Saklıkent Kayak Merkezi", "Karain Mağarası Gezisi",
+    "Altınbeşik Mağarası Gezisi", "Dim Çayı Piknik", "Sapadere Kanyonu Turu", "Tazı Kanyonu Turu"
 ]
 
-popular_places = [
-    {"name": "7 Mehmet", "type": "Restaurant", "desc": "Antalya'nın en köklü ve meşhur restoranlarından biri."},
-    {"name": "Akdeniz Üniversitesi", "type": "Eğitim", "desc": "Türkiye'nin en saygın eğitim kurumlarından biri olan Akdeniz Üniversitesi kampüsü."},
-    {"name": "Lara Balıkevi", "type": "Restaurant", "desc": "Deniz ürünleri sevenlerin vazgeçilmez adresi."},
-    {"name": "Antalya Müzesi", "type": "Müze", "desc": "Tarihe tanıklık eden binlerce eserin sergilendiği müze."},
-    {"name": "Saklıkent Kayak Merkezi", "type": "Spor", "desc": "Aynı gün hem denize girip hem kayak yapabileceğiniz nadir yerlerden."},
-    {"name": "Kaleiçi Yat Limanı", "type": "Tarih", "desc": "Tarihi dokusu ve tekneleriyle Antalya'nın simgesi."},
+parks = [
+    "Karaalioğlu Parkı", "Atatürk Parkı", "Düden Parkı", "Dokuma Park", "Kepez Kent Ormanı", "Falez Parkı",
+    "Yavuz Özcan Parkı", "Cam Piramit Parkı", "Beach Park", "Aktur Park"
 ]
 
-general_topics = [
-    {"title": "Antalya Villalar", "keyword": "antalya kiralık villa", "content": "Antalya'da tatil yapmak isteyenler için villa kiralama seçenekleri her geçen gün artıyor."},
-    {"title": "Antalya Oteller", "keyword": "antalya otel fiyatları", "content": "Her bütçeye uygun otel seçenekleriyle Antalya, turizmin başkenti."},
-    {"title": "Antalya Konserler", "keyword": "antalya konser takvimi 2025", "content": "Antalya Açıkhava Tiyatrosu ve Expo alanı başta olmak üzere şehirde yıl boyunca birçok ünlü sanatçı konser veriyor."},
-    {"title": "Antalya Kamp Alanları", "keyword": "antalya ücretsiz kamp alanları", "content": "Doğa severler için Antalya'nın koyları ve yaylaları eşsiz kamp imkanları sunuyor."},
-    {"title": "Antalya Gece Hayatı", "keyword": "antalya barlar sokağı", "content": "Kaleiçi barlar sokağı, Lara ve Konyaaltı'ndaki mekanlar ile Antalya geceleri sabahın ilk ışıklarına kadar devam ediyor."},
-    {"title": "Antalya Özel Hastaneler", "keyword": "antalya özel hastane listesi", "content": "Sağlık turizminin başkenti Antalya'da dünya standartlarında hizmet veren birçok özel hastane bulunmaktadır."},
-    {"title": "Antalya Havalimanı Transfer", "keyword": "antalya havalimanı ulaşım", "content": "Antalya Havalimanı'ndan şehir merkezine ve otellere ulaşım için Havaş, Antray, taksi ve özel transfer seçenekleri mevcuttur."},
-    {"title": "Antalya Semt Pazarları", "keyword": "antalya pazar yerleri", "content": "Taze sebze ve meyveye ulaşmak için Antalya'nın meşhur semt pazarları haftanın her günü farklı noktalarda kuruluyor."},
+mosques = [
+    "Yivli Minare Camii", "Murat Paşa Camii", "Tekeli Mehmet Paşa Camii", "İskele Camii", "Kesik Minare (Korkut) Camii",
+    "Akdeniz Üniversitesi Camii", "Külliye Camii", "Müsellim Camii", "Balibey Camii"
+]
+
+living_topics = [
+    "Antalya'da Yaşam Maliyeti 2025", "Antalya'da Ev Kiraları Ne Kadar?", "Antalya'da Öğrenci Olmak", 
+    "Antalya'da İş İmkanları", "Antalya'da Emeklilik Hayatı", "Antalya'da Yabancıların Oturma İzni",
+    "Antalya'da Doğalgaz Aboneliği", "Antalya'da Su Aboneliği", "Antalya'da Elektrik Aboneliği",
+    "Antalya'da İnternet Altyapısı", "Antalya'da Toplu Taşıma Kartı Nasıl Alınır?", "Antalya'da Bisiklet Yolları",
+    "Antalya'da Trafik Durumu", "Antalya'da İklim ve Hava Durumu", "Antalya'da Tarım ve Seracılık",
+    "Antalya'da Sanayi ve Ticaret", "Antalya'da Turizm Sezonu Ne Zaman Başlar?", "Antalya'da Kışın Neler Yapılır?",
+    "Antalya'da Yazın Neler Yapılır?", "Antalya'da Haftasonu Gezilecek Yerler", "Antalya'da Kamp Yapılacak Yerler",
+    "Antalya'da Balık Tutulacak Yerler", "Antalya'da Fotoğraf Çekilecek Yerler", "Antalya'da Düğün Mekanları",
+    "Antalya'da Kahvaltı Mekanları", "Antalya'da Meyhaneler", "Antalya'da Gece Kulüpleri", "Antalya'da Beach Clublar",
+    "Antalya'da Aquaparklar", "Antalya'da Lunaparklar", "Antalya'da Hayvanat Bahçesi", "Antalya'da Oyuncak Müzesi",
+    "Antalya'da Ters Ev", "Antalya'da Masal Parkı", "Antalya'da Hobit Evleri", "Antalya'da Orman Parkı"
 ]
 
 articles_to_generate = []
+
+# --- GENERATION LOOPS ---
 
 # 1. City Distances
 for city in cities:
     km = random.randint(100, 1500)
     hours = km // 80
-    minutes = random.choice([15, 30, 45, 0])
     articles_to_generate.append({
         "filename": f"antalya-{city.lower().replace('ı','i').replace('ğ','g').replace('ü','u').replace('ş','s').replace('ö','o').replace('ç','c')}-kac-km.html",
         "title": f"Antalya {city} Arası Kaç Km? Kaç Saat?",
@@ -170,12 +232,108 @@ for city in cities:
         "intro": f"Antalya'dan {city} şehrine gitmeyi planlayanlar için detaylı yol rehberi.",
         "content_p1": f"Antalya ile {city} arasındaki mesafe karayolu ile yaklaşık olarak {km} kilometredir.",
         "subheading": f"Antalya - {city} Yolculuğu Ne Kadar Sürer?",
-        "content_p2": f"Özel araçla Antalya'dan {city}'a gitmek ortalama {hours} saat {minutes} dakika sürmektedir.",
+        "content_p2": f"Özel araçla Antalya'dan {city}'a gitmek ortalama {hours} saat sürmektedir.",
         "content_p3": f"{city} şehrinden Antalya'ya gelirken yol üzerindeki dinlenme tesislerini kullanabilirsiniz.",
         "topic": "şehirlerarası ulaşım"
     })
 
-# 2. Districts
+# 2. Neighborhoods
+for hood in neighborhoods:
+    articles_to_generate.append({
+        "filename": f"antalya-{hood.lower().replace('ı','i').replace('ğ','g').replace('ü','u').replace('ş','s').replace('ö','o').replace('ç','c').replace(' ','-')}-nerede.html",
+        "title": f"Antalya {hood} Nerede? Gezilecek Yerler",
+        "description": f"Antalya {hood} mahallesi nerede? {hood} bölgesindeki oteller, restoranlar ve gezilecek yerler.",
+        "keywords": f"antalya {hood} nerede, {hood} gezilecek yerler, {hood} otelleri",
+        "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+        "intro": f"Antalya'nın popüler bölgelerinden {hood}, hem yerleşim hem de turistik açıdan önem taşıyor.",
+        "content_p1": f"{hood}, Antalya'nın merkezi noktalarına yakınlığı ve sosyal imkanlarıyla dikkat çekmektedir.",
+        "subheading": f"{hood} Yaşam ve Konut",
+        "content_p2": f"{hood} bölgesinde satılık ve kiralık daire fiyatları, bölgenin konumuna ve denize yakınlığına göre değişiklik göstermektedir.",
+        "content_p3": "Bölgedeki parklar, okullar ve alışveriş olanakları aileler için ideal bir yaşam alanı sunmaktadır.",
+        "topic": f"{hood} mahallesi"
+    })
+
+# 3. Hospitals
+for hospital in hospitals:
+    articles_to_generate.append({
+        "filename": f"{hospital.lower().replace(' ','-').replace('ı','i').replace('ğ','g').replace('ü','u').replace('ş','s').replace('ö','o').replace('ç','c').replace('.','')}-randevu.html",
+        "title": f"{hospital} Randevu ve İletişim",
+        "description": f"{hospital} nerede? Telefon numarası ve randevu alma bilgileri. {hospital} bölümleri ve doktorları.",
+        "keywords": f"{hospital} randevu, {hospital} telefon, {hospital} nerede",
+        "image": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+        "intro": f"Antalya'nın önde gelen sağlık kuruluşlarından {hospital}, modern tıbbi cihazları ve uzman kadrosuyla hizmet vermektedir.",
+        "content_p1": f"{hospital} bünyesinde acil servis, poliklinikler ve ameliyathaneler bulunmaktadır.",
+        "subheading": "Nasıl Randevu Alınır?",
+        "content_p2": "MHRS sistemi üzerinden veya hastanenin kendi web sitesinden online randevu oluşturabilirsiniz. Ayrıca telefonla da randevu almanız mümkündür.",
+        "content_p3": "Hastaneye ulaşım için toplu taşıma araçlarını kullanabilir veya özel aracınızla otopark hizmetinden yararlanabilirsiniz.",
+        "topic": "sağlık hizmetleri"
+    })
+
+# 4. Schools & Universities
+for school in schools:
+    articles_to_generate.append({
+        "filename": f"{school.lower().replace(' ','-').replace('ı','i').replace('ğ','g').replace('ü','u').replace('ş','s').replace('ö','o').replace('ç','c').replace('.','')}-nerede.html",
+        "title": f"{school} Nerede? Taban Puanları ve Bölümler",
+        "description": f"{school} nerede? İletişim bilgileri, taban puanları ve ulaşım imkanları.",
+        "keywords": f"{school} nerede, {school} taban puanları, {school} iletişim",
+        "image": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+        "intro": f"Eğitim kalitesiyle öne çıkan {school}, Antalya'nın önemli eğitim kurumlarından biridir.",
+        "content_p1": f"{school}, öğrencilerine sunduğu akademik ve sosyal imkanlarla başarıyı hedeflemektedir.",
+        "subheading": "Ulaşım ve Konum",
+        "content_p2": "Okula ulaşım için şehrin farklı noktalarından servis ve toplu taşıma imkanları bulunmaktadır.",
+        "content_p3": "Detaylı bilgi ve kayıt koşulları için kurumun resmi web sitesini ziyaret edebilirsiniz.",
+        "topic": "eğitim kurumları"
+    })
+
+# 5. Transportation Points
+for trans in transportation:
+    articles_to_generate.append({
+        "filename": f"{trans.lower().replace(' ','-').replace('ı','i').replace('ğ','g').replace('ü','u').replace('ş','s').replace('ö','o').replace('ç','c')}-ulasim.html",
+        "title": f"{trans} Nerede? Hangi Otobüs Gider?",
+        "description": f"{trans} nerede? Harita konumu, geçen otobüs hatları ve ulaşım bilgileri.",
+        "keywords": f"{trans} nerede, {trans} otobüs, {trans} yol tarifi",
+        "image": "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+        "intro": f"Antalya şehir içi ulaşımın kilit noktalarından biri olan {trans}, her gün binlerce yolcuya hizmet vermektedir.",
+        "content_p1": f"{trans} konumuna ulaşmak için Antray tramvay hattını veya belediye otobüslerini kullanabilirsiniz.",
+        "subheading": "Önemli Bilgiler",
+        "content_p2": "Antalya Kart'ınızla toplu taşıma araçlarından indirimli aktarma imkanlarıyla yararlanabilirsiniz.",
+        "content_p3": "Sefer saatleri ve güzergah bilgileri için Antalya Ulaşım mobil uygulamasını kontrol etmenizi öneririz.",
+        "topic": "şehir içi ulaşım"
+    })
+
+# 6. Local Foods
+for food in foods:
+    articles_to_generate.append({
+        "filename": f"{food.lower().replace(' ','-').replace('ı','i').replace('ğ','g').replace('ü','u').replace('ş','s').replace('ö','o').replace('ç','c')}-nerede-yenir.html",
+        "title": f"Antalya'da En İyi {food} Nerede Yenir?",
+        "description": f"{food} tarifi ve Antalya'da {food} yapan en meşhur yerler. {food} fiyatları.",
+        "keywords": f"{food} nerede yenir, {food} tarifi, antalya {food}",
+        "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+        "intro": f"Antalya mutfağının vazgeçilmez lezzetlerinden {food}, şehre gelenlerin mutlaka denemesi gereken bir tat.",
+        "content_p1": f"{food}, yöresel malzemelerle hazırlanan ve kendine has sunumuyla damaklarda iz bırakan bir lezzettir.",
+        "subheading": "Nerede Denemeli?",
+        "content_p2": "Şehir merkezindeki tarihi restoranlarda ve esnaf lokantalarında bu lezzetin en doğal halini bulabilirsiniz.",
+        "content_p3": "Evde yapmak isteyenler için orijinal tarifine sadık kalarak hazırlamanızı öneririz.",
+        "topic": "yöresel lezzetler"
+    })
+
+# 7. Services
+for service in services:
+    articles_to_generate.append({
+        "filename": f"{service.lower().replace(' ','-').replace('ı','i').replace('ğ','g').replace('ü','u').replace('ş','s').replace('ö','o').replace('ç','c')}.html",
+        "title": f"{service} ve İletişim Bilgileri",
+        "description": f"{service} listesi, telefon numaraları ve adres bilgileri. Güncel {service} rehberi.",
+        "keywords": f"{service}, antalya hizmetler, {service} telefon",
+        "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+        "intro": f"Antalya'da {service.lower()} ihtiyacınız olduğunda başvurabileceğiniz güvenilir adresler ve bilgiler.",
+        "content_p1": f"Vatandaşların ve turistlerin hayatını kolaylaştıran {service.lower()} hizmetleri, şehrin her noktasında erişilebilir durumdadır.",
+        "subheading": "Detaylar",
+        "content_p2": "Güncel bilgilere ve iletişim numaralarına resmi kurumların web sitelerinden veya çağrı merkezlerinden ulaşabilirsiniz.",
+        "content_p3": "Acil durumlarda 112 Acil Çağrı Merkezi'ni arayarak yardım talep edebilirsiniz.",
+        "topic": "kamu ve özel hizmetler"
+    })
+
+# 8. Districts
 for district in districts:
     articles_to_generate.append({
         "filename": f"antalya-{district.lower().replace('ı','i').replace('ğ','g').replace('ü','u').replace('ş','s').replace('ö','o').replace('ç','c')}-gezilecek-yerler.html",
@@ -191,7 +349,7 @@ for district in districts:
         "topic": f"{district} bölgesi"
     })
 
-# 3. Beaches
+# 9. Beaches
 for beach in beaches:
     articles_to_generate.append({
         "filename": f"{beach.lower().replace(' ','-').replace('ı','i').replace('ğ','g').replace('ü','u').replace('ş','s').replace('ö','o').replace('ç','c')}-nerede.html",
@@ -207,7 +365,7 @@ for beach in beaches:
         "topic": "plajlar ve koylar"
     })
 
-# 4. Historical Sites
+# 10. Historical Sites
 for site in historical_sites:
     articles_to_generate.append({
         "filename": f"{site.lower().replace(' ','-').replace('ı','i').replace('ğ','g').replace('ü','u').replace('ş','s').replace('ö','o').replace('ç','c').replace('(','').replace(')','')}-tarihi.html",
@@ -223,7 +381,7 @@ for site in historical_sites:
         "topic": "tarihi ve kültürel miras"
     })
 
-# 5. Malls
+# 11. Malls
 for mall in malls:
     articles_to_generate.append({
         "filename": f"{mall.lower().replace(' ','-').replace('ı','i').replace('ğ','g').replace('ü','u').replace('ş','s').replace('ö','o').replace('ç','c')}-magazalar.html",
@@ -239,7 +397,7 @@ for mall in malls:
         "topic": "alışveriş ve yaşam"
     })
 
-# 6. Activities
+# 12. Activities
 for activity in activities:
     articles_to_generate.append({
         "filename": f"{activity.lower().replace(' ','-').replace('ı','i').replace('ğ','g').replace('ü','u').replace('ş','s').replace('ö','o').replace('ç','c')}-fiyatlari.html",
@@ -255,36 +413,52 @@ for activity in activities:
         "topic": "aktivite ve eğlence"
     })
 
-# 7. Popular Places (Existing)
-for place in popular_places:
+# 13. Parks
+for park in parks:
     articles_to_generate.append({
-        "filename": f"{place['name'].lower().replace(' ','-').replace('ı','i').replace('ğ','g').replace('ü','u').replace('ş','s').replace('ö','o').replace('ç','c')}-nerede.html",
-        "title": f"{place['name']} Nerede? Nasıl Gidilir?",
-        "description": f"Antalya'nın popüler yerlerinden {place['name']} nerede? {place['name']} giriş ücreti ve detaylar.",
-        "keywords": f"{place['name']} nerede, {place['name']} antalya",
-        "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-        "intro": f"Antalya'nın en çok merak edilen noktalarından biri olan {place['name']}, ziyaretçilerin ilgi odağı.",
-        "content_p1": f"{place['name']}, {place['desc']}",
-        "subheading": "Ziyaret Bilgileri",
-        "content_p2": "Şehir merkezinden kolayca ulaşabileceğiniz bu mekan, haftanın her günü hizmet vermektedir.",
-        "content_p3": "Detaylı bilgi ve rezervasyon için işletme ile iletişime geçebilirsiniz.",
-        "topic": "mekan rehberi"
+        "filename": f"{park.lower().replace(' ','-').replace('ı','i').replace('ğ','g').replace('ü','u').replace('ş','s').replace('ö','o').replace('ç','c')}-nerede.html",
+        "title": f"{park} Nerede? Giriş Ücreti ve Aktiviteler",
+        "description": f"{park} nerede? Park içinde neler var? Piknik yapılır mı? Giriş ücreti.",
+        "keywords": f"{park} nerede, {park} giriş ücreti, antalya parklar",
+        "image": "https://images.unsplash.com/photo-1496417263034-38ec4f0d6d21?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+        "intro": f"Antalya'nın yeşil yüzü {park}, şehrin gürültüsünden uzaklaşmak isteyenler için harika bir kaçış noktası.",
+        "content_p1": f"{park}, geniş yürüyüş yolları, çocuk oyun alanları ve dinlenme noktalarıyla her yaştan ziyaretçiye hitap ediyor.",
+        "subheading": "Neler Yapılır?",
+        "content_p2": "Park içerisinde yürüyüş yapabilir, bisiklete binebilir veya manzaranın tadını çıkararak kitabınızı okuyabilirsiniz.",
+        "content_p3": "Özellikle hafta sonları ailelerin uğrak noktası olan parkta, doğa ile iç içe keyifli vakit geçirebilirsiniz.",
+        "topic": "park ve rekreasyon"
     })
 
-# 8. General Topics (Existing)
-for topic in general_topics:
+# 14. Mosques
+for mosque in mosques:
     articles_to_generate.append({
-        "filename": f"{topic['title'].lower().replace(' ','-').replace('ı','i').replace('ğ','g').replace('ü','u').replace('ş','s').replace('ö','o').replace('ç','c')}.html",
-        "title": f"{topic['title']} - Detaylı Rehber 2025",
-        "description": f"{topic['title']} hakkında bilmeniz gereken her şey. {topic['content'][:100]}...",
-        "keywords": f"{topic['keyword']}, antalya rehberi",
-        "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-        "intro": f"Antalya'da {topic['title'].lower()} arayışında olanlar için hazırladığımız bu rehberde tüm detayları bulacaksınız.",
-        "content_p1": topic['content'],
-        "subheading": "Önerilerimiz",
-        "content_p2": "Bütçenize ve zevkinize uygun en iyi seçenekleri değerlendirmek için erken hareket etmenizde fayda var.",
-        "content_p3": "Antalya'nın sunduğu bu imkanlardan yararlanarak tatilinizi daha keyifli hale getirebilirsiniz.",
-        "topic": topic['title']
+        "filename": f"{mosque.lower().replace(' ','-').replace('ı','i').replace('ğ','g').replace('ü','u').replace('ş','s').replace('ö','o').replace('ç','c')}-tarihi.html",
+        "title": f"{mosque} Tarihi ve Mimari Özellikleri",
+        "description": f"{mosque} nerede? Kim tarafından yapıldı? {mosque} tarihi ve mimarisi.",
+        "keywords": f"{mosque} tarihi, {mosque} nerede, antalya camileri",
+        "image": "https://images.unsplash.com/photo-1565060169194-196e9272dad9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+        "intro": f"Antalya'nın manevi ve tarihi simgelerinden {mosque}, mimari yapısıyla dikkat çekmektedir.",
+        "content_p1": f"{mosque}, geçmişten günümüze taşıdığı izlerle şehrin kültürel mirasının önemli bir parçasıdır.",
+        "subheading": "Mimari Detaylar",
+        "content_p2": "Caminin iç ve dış süslemeleri, dönemin sanat anlayışını yansıtan eşsiz örnekler sunmaktadır.",
+        "content_p3": "İbadete açık olan camiyi ziyaret ederken kıyafet kurallarına ve ziyaret saatlerine dikkat etmenizi rica ederiz.",
+        "topic": "inanç turizmi"
+    })
+
+# 15. Living Topics
+for topic in living_topics:
+    articles_to_generate.append({
+        "filename": f"{topic.lower().replace(' ','-').replace('ı','i').replace('ğ','g').replace('ü','u').replace('ş','s').replace('ö','o').replace('ç','c').replace('?','')}.html",
+        "title": topic,
+        "description": f"{topic} hakkında detaylı bilgiler, ipuçları ve tavsiyeler. Antalya yaşam rehberi.",
+        "keywords": f"{topic}, antalya yaşam, antalya rehberi",
+        "image": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+        "intro": f"Antalya'da yaşamayı düşünenler veya şehri daha yakından tanımak isteyenler için {topic} konusu oldukça önemlidir.",
+        "content_p1": f"{topic} hakkında merak edilen tüm detayları bu yazımızda derledik. Şehrin sunduğu imkanlar ve yaşam standartları hakkında fikir sahibi olabilirsiniz.",
+        "subheading": "Önemli İpuçları",
+        "content_p2": "Antalya, hem yerli hem de yabancı nüfusun yoğun olduğu kozmopolit bir şehirdir. Bu nedenle {topic} konusunda farklı seçenekler ve alternatifler bulmanız mümkündür.",
+        "content_p3": "Güncel bilgilere ve resmi prosedürlere ilgili kurumların web sitelerinden ulaşmanızı tavsiye ederiz.",
+        "topic": "yaşam rehberi"
     })
 
 # Ensure directory exists
